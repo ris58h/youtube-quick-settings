@@ -1,8 +1,6 @@
+(function () {
 var player = document.getElementById("movie_player");
-
-if (!player) {
-	console.log("[DEBUG] Player not found!");
-} else {
+if (player) {
     const relativePlaybackRate = (level) => {
         const playbackRate = player.getPlaybackRate();
         if (level == 0) {
@@ -115,4 +113,4 @@ if (!player) {
         });
     }
 }
-
+}());
